@@ -19,7 +19,7 @@ namespace DemoGenGit.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-            string contact = System.IO.File.ReadAllText(Server.MapPath("~") + @"\DgGitPolling\DemoGenGitPolling\Template\Contact.json");
+            string contact = System.IO.File.ReadAllText(Server.MapPath("~") + @"\DgGitPolling\DemoGenGit\Template\Contact.json");
             if (contact != "")
             {
                 JObject obj = new JObject();
