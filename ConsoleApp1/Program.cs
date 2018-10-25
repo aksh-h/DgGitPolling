@@ -14,7 +14,7 @@ namespace ConsoleApp1
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://demogengitops.azurewebsites.net/");
-                //client.BaseAddress = new Uri("http://localhost:58969/");
+                //client.BaseAddress = new Uri("http://localhost:5521/");
 
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
